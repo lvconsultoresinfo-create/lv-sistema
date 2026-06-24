@@ -1,4 +1,4 @@
- exports.handler = async (event) => {
+exports.handler = async (event) => {
   if (event.httpMethod === 'OPTIONS') {
     return {
       statusCode: 200,
@@ -22,7 +22,7 @@
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'x-api-key': process.env.ANTHROPIC_API_KEY,
+        'x-api-key': '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',
         'anthropic-version': '2023-06-01'
       },
       body: JSON.stringify(body)
